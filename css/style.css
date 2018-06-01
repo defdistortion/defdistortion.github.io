@@ -116,7 +116,7 @@ body {
   text-align: center;
   font-family: Teko, sans-serif; }
   .lineup__subtitle {
-    margin-top: 80px;
+    margin: 80px 0 20px 0;
     font-size: 24px; }
     .lineup__subtitle:first-child {
       margin-top: 0; }
@@ -145,14 +145,14 @@ body {
       display: inline-block; }
   .crewlist__crew {
     display: inline-block;
-    align-self: center;
-    margin: 10px 0; }
+    align-self: center; }
     .crewlist__crew_splitter {
       width: 100%;
       height: 0; }
     .crewlist__crew_image-wrapper {
       max-width: 180px;
       width: 50%;
+      margin: 10px 0;
       padding: 0 10px;
       box-sizing: border-box; }
     .crewlist__crew_text:not(:last-child)::after {
