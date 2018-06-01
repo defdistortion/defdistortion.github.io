@@ -1,0 +1,6 @@
+.global-footer {
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .global-footer__copyright {
+    text-align: center;
+    font-size: 14px; }

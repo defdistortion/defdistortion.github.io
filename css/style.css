@@ -1,0 +1,251 @@
+html {
+  height: 100%; }
+
+body {
+  height: inherit;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif; }
+
+.global-footer {
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .global-footer__copyright {
+    text-align: center;
+    font-size: 14px; }
+
+.fixed-background {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+  background-image: url("../image/img-mainvisual.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.primary-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 160px auto;
+  padding: 80px 30px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .primary-section__title {
+    font-size: 40px;
+    font-family: Teko, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px; }
+
+@media only screen and (max-width: 640px) {
+  .primary-section {
+    padding: 40px 16px; }
+    .primary-section__title {
+      text-align: center; } }
+
+.welcome {
+  position: relative;
+  height: 100%; }
+  .welcome__mainvisual-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto; }
+  .welcome__mainvisual {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 1280px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .welcome__title-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    text-align: center; }
+  .welcome__title {
+    width: 80%;
+    max-width: 600px; }
+  .welcome__logo-clubasia {
+    position: absolute;
+    left: 50px;
+    top: 40px; }
+  .welcome__logo-tms {
+    position: absolute;
+    right: 50px;
+    top: 40px; }
+
+@media only screen and (max-width: 640px) {
+  .welcome__logo-clubasia {
+    width: 64px;
+    left: 20px;
+    top: 20px; }
+  .welcome__logo-tms {
+    width: 64px;
+    right: 20px;
+    top: 20px; } }
+
+.lineup {
+  text-align: center;
+  font-family: Teko, sans-serif; }
+  .lineup__subtitle {
+    margin-top: 80px;
+    font-size: 24px; }
+    .lineup__subtitle:first-child {
+      margin-top: 0; }
+
+.crewlist {
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.06em; }
+  .crewlist_inline {
+    display: inline-block;
+    margin: 0 15px; }
+  .crewlist__part {
+    text-align: center;
+    font-weight: bolder; }
+    .crewlist__part_inline {
+      display: inline;
+      margin-right: 5px; }
+      .crewlist__part_inline:not(:first-child) {
+        margin-left: 30px; }
+  .crewlist__crews {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .crewlist__crews_inline {
+      display: inline-block; }
+  .crewlist__crew {
+    display: inline-block;
+    align-self: center;
+    margin: 10px 0; }
+    .crewlist__crew_splitter {
+      width: 100%;
+      height: 0; }
+    .crewlist__crew_image-wrapper {
+      max-width: 180px;
+      width: 50%;
+      padding: 0 10px;
+      box-sizing: border-box; }
+    .crewlist__crew_text:not(:last-child)::after {
+      display: inline-block;
+      content: '/';
+      margin: 0 6px; }
+  .crewlist__crew-logo {
+    height: auto;
+    max-width: 100%;
+    max-height: 80px; }
+    .crewlist__crew-logo__large {
+      width: calc(100% - 32px);
+      max-width: 400px; }
+
+@media only screen and (max-width: 800px) {
+  .crewlist__crew_splitter {
+    display: none; } }
+
+.ticket__types {
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between center; }
+
+.ticket__type {
+  display: flex;
+  position: relative;
+  width: calc(50% - 16px);
+  min-width: 320px;
+  height: 200px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  align-content: center; }
+  .ticket__type_adv {
+    border: 4px solid transparent;
+    background-color: #d42d89; }
+  .ticket__type_door {
+    border: 4px solid #fff; }
+
+.ticket__name {
+  padding: 0 20px;
+  align-self: center;
+  font-family: Teko, sans-serif;
+  font-weight: bolder;
+  font-size: 48px; }
+
+.ticket__type-caption {
+  position: absolutpe;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px 10px;
+  box-sizing: border-box;
+  text-decoration: underline;
+  font-size: 13px;
+  letter-spacing: 0; }
+
+.ticket__detail {
+  flex: 1;
+  padding: 0 30px;
+  align-self: center;
+  text-align: right; }
+
+.ticket__subname {
+  font-size: 20px;
+  font-weight: bolder; }
+
+.ticket__price {
+  font-size: 24px; }
+
+.ticket__caption {
+  max-width: 750px;
+  margin: 20px auto;
+  font-size: 12px; }
+
+@media only screen and (max-width: 400px) {
+  .ticket__type {
+    width: calc(100% - 16px);
+    min-width: 0; }
+  .ticket__name {
+    font-size: 40px; }
+  .ticket__subname {
+    font-size: 14px; } }
+
+.attention__attentions-wrapper {
+  list-style-type: square;
+  margin-left: 30px; }
+
+.attention__item {
+  margin: 5px 0; }
+
+@media only screen and (max-width: 640px) {
+  .attention__item {
+    font-size: 13px; } }
